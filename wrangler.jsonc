@@ -3,9 +3,13 @@
   // Cloudflare Workers Builds runs `npx wrangler versions upload` from the
   // repo root, so this file tells wrangler what to deploy.
   "name": "elite-spine-fort-lee",
+  "main": "./worker/index.js",
   "compatibility_date": "2026-08-04",
   "assets": {
     "directory": "./",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // Run the Worker first so http:// and bare-domain requests get the 301 to https://www.
+    "run_worker_first": true
   }
 }
