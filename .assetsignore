@@ -9,3 +9,8 @@ SHEET-SETUP.md
 google-apps-script
 images-src
 worker
+
+# SEO guard (build-time check, not part of the public site)
+tools/
+seo-lock.json
+SEO-GUARD.md
