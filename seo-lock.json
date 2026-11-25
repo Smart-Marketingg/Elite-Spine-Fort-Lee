@@ -1,0 +1,328 @@
+{
+ "_about": "SEO lock. Cloudflare refuses to deploy if the site no longer matches this file. Do not edit by hand: run \"node tools/seo-guard.mjs update\" after an intended SEO change and commit the result. See SEO-GUARD.md.",
+ "custom": {
+  "siteDir": ".",
+  "ignore": [],
+  "mustContain": [
+   {
+    "file": "worker/index.js",
+    "text": "canonicalRedirect(request) ||",
+    "why": "http and bare domain -> https://www redirect"
+   },
+   {
+    "file": "wrangler.jsonc",
+    "text": "\"run_worker_first\": true",
+    "why": "the redirect Worker must run before static files"
+   }
+  ],
+  "mustExist": []
+ },
+ "pages": {
+  "404.html": {
+   "lang": "en",
+   "title": "Redirecting… — Elite Spine & Sports Care | Fort Lee, NJ",
+   "description": "",
+   "robots": "noindex",
+   "canonical": "https://www.elitespine-nj.com/404",
+   "og": {
+    "og:title": "Page Not Found — Elite Spine &amp; Sports Care",
+    "og:description": "The page you are looking for has moved. Explore Elite Spine &amp; Sports Care in Fort Lee, NJ.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "images/logo.svg": "Elite Spine & Sports Care"
+   }
+  },
+  "blog-post.html": {
+   "lang": "en",
+   "title": "Wellness Advice &amp; Blog — Elite Spine & Sports Care | Fort Lee, NJ",
+   "description": "Expert advice on spine health, sports recovery, physical therapy, and injury prevention from the team at Elite Spine & Sports Care in Fort Lee, NJ.",
+   "robots": "",
+   "canonical": "https://www.elitespine-nj.com/blog-post",
+   "og": {
+    "og:title": "Wellness Advice — Elite Spine &amp; Sports Care | Fort Lee, NJ",
+    "og:description": "Expert advice on spine health, sports recovery, and injury prevention from the team at Elite Spine &amp; Sports Care.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "images/logo.svg": "Elite Spine & Sports Care"
+   }
+  },
+  "blog.html": {
+   "lang": "en",
+   "title": "Wellness Advice &amp; Blog — Elite Spine & Sports Care | Fort Lee, NJ",
+   "description": "Expert advice on spine health, sports recovery, physical therapy, and injury prevention from the team at Elite Spine & Sports Care in Fort Lee, NJ.",
+   "robots": "",
+   "canonical": "https://www.elitespine-nj.com/blog",
+   "og": {
+    "og:title": "Wellness Advice &amp; Blog — Elite Spine &amp; Sports Care",
+    "og:description": "Expert advice on spine health, sports recovery, physical therapy, and injury prevention from our Fort Lee, NJ team.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [
+    {
+     "types": "BreadcrumbList",
+     "hash": "a779dc229273"
+    }
+   ],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "https://static.wixstatic.com/media/6515c6_7c2af55988694654904e9ceab6a0953a~mv2.jpg/v1/fill/w_800,h_500,al_c,q_85,enc_avif,quality_auto/blog.jpg": "Athlete recovering from injury",
+    "https://static.wixstatic.com/media/6515c6_85efa5944a804eb09c45f620890b1c84~mv2.webp/v1/fill/w_800,h_500,al_c,q_85,enc_avif,quality_auto/blog.webp": "Occupational therapy session",
+    "images/chiropractic-care.avif": "Adolescent athlete training",
+    "images/logo.svg": "Elite Spine & Sports Care",
+    "images/physical-therapy.avif": "Physical therapy session"
+   }
+  },
+  "conditions-services.html": {
+   "lang": "en",
+   "title": "Conditions & Treatments in Fort Lee, NJ | Elite Spine",
+   "description": "Explore the conditions we treat — back pain, neck pain, sciatica, sports injuries and more — and the advanced therapies we use at Elite Spine & Sports Care in Fort Lee, NJ.",
+   "robots": "",
+   "canonical": "https://www.elitespine-nj.com/conditions-services",
+   "og": {
+    "og:title": "Conditions We Treat &amp; Services — Elite Spine &amp; Sports Care",
+    "og:description": "Explore the conditions we treat — back pain, neck pain, sciatica, sports injuries — and the advanced therapies we use in Fort Lee, NJ.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [
+    {
+     "types": "BreadcrumbList",
+     "hash": "b5434b7b7371"
+    }
+   ],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "images/logo.svg": "Elite Spine & Sports Care"
+   }
+  },
+  "index.html": {
+   "lang": "en",
+   "title": "Physical Therapy & Chiropractic Care | Fort Lee, NJ",
+   "description": "Premium physical therapy and chiropractic care in Fort Lee, NJ. Move better, recover stronger. Treating back pain, sciatica, sports injuries and more across Bergen County.",
+   "robots": "",
+   "canonical": "https://www.elitespine-nj.com/",
+   "og": {
+    "og:title": "Elite Spine &amp; Sports Care — Fort Lee, NJ",
+    "og:description": "Premium physical therapy and chiropractic care in Fort Lee, NJ. Move better, recover stronger — treating back pain, sciatica, sports injuries and more across Bergen County.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [
+    {
+     "types": "MedicalClinic+WebSite+WebPage+FAQPage",
+     "hash": "6000a6ca3616"
+    }
+   ],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "images/clinic-opt.jpg": "Elite Spine Fort Lee clinic interior",
+    "images/logo.svg": "Elite Spine & Sports Care"
+   }
+  },
+  "insurance.html": {
+   "lang": "en",
+   "title": "Insurance — Elite Spine & Sports Care | Fort Lee, NJ",
+   "description": "Elite Spine & Sports Care in Fort Lee, NJ accepts most major insurance plans. See accepted providers and coverage options, or let our team verify your benefits before your first visit.",
+   "robots": "",
+   "canonical": "https://www.elitespine-nj.com/insurance",
+   "og": {
+    "og:title": "Insurance — Elite Spine &amp; Sports Care | Fort Lee, NJ",
+    "og:description": "Elite Spine &amp; Sports Care accepts most major insurance plans. See accepted providers or let our team verify your benefits.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [
+    {
+     "types": "BreadcrumbList",
+     "hash": "bf607953aeb6"
+    }
+   ],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "images/logo.svg": "Elite Spine & Sports Care"
+   }
+  },
+  "team.html": {
+   "lang": "en",
+   "title": "Our Team — Elite Spine & Sports Care | Fort Lee, NJ",
+   "description": "Meet the licensed physical therapists, chiropractors, and care team at Elite Spine & Sports Care in Fort Lee, NJ — the people helping you move better and recover stronger.",
+   "robots": "",
+   "canonical": "https://www.elitespine-nj.com/team",
+   "og": {
+    "og:title": "Our Team — Elite Spine &amp; Sports Care | Fort Lee, NJ",
+    "og:description": "Meet the licensed physical therapists, chiropractors, and care team helping you move better and recover stronger.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [
+    {
+     "types": "BreadcrumbList",
+     "hash": "56f85651ef4b"
+    }
+   ],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "https://static.wixstatic.com/media/6515c6_2b25da5ef85a48b1ab9ac3f73202d71a~mv2.webp/v1/fill/w_500,h_640,al_c,q_85,enc_avif,quality_auto/team.webp": "Sophia Tarabola",
+    "https://static.wixstatic.com/media/6515c6_5ed27acc026c40bfa11862df5bb06691~mv2.webp/v1/fill/w_500,h_640,al_c,q_85,enc_avif,quality_auto/team.webp": "Michael Yarish, DPT",
+    "https://static.wixstatic.com/media/6515c6_805818e6ea444bdd8c26d307287d68f3~mv2.webp/v1/fill/w_500,h_640,al_c,q_85,enc_avif,quality_auto/team.webp": "Dr. John Mathai, DC",
+    "https://static.wixstatic.com/media/6515c6_8d10d9e215504f6b96627f70d779d779~mv2.webp/v1/fill/w_500,h_640,al_c,q_85,enc_avif,quality_auto/team.webp": "Raymond James Razon",
+    "images/logo.svg": "Elite Spine & Sports Care"
+   }
+  },
+  "thank-you.html": {
+   "lang": "en",
+   "title": "Thank You — Elite Spine & Sports Care | Fort Lee, NJ",
+   "description": "Thank you — your request has been received. The Elite Spine & Sports Care team in Fort Lee, NJ will reach out within one business day.",
+   "robots": "noindex, follow",
+   "canonical": "https://www.elitespine-nj.com/thank-you",
+   "og": {
+    "og:title": "Thank You — Elite Spine &amp; Sports Care",
+    "og:description": "Your request has been received. Our Fort Lee team will be in touch within one business day.",
+    "og:image": "https://www.elitespine-nj.com/images/og-image.jpg"
+   },
+   "verify": {
+    "google-site-verification": "8lYpyjeTP9PN6SSEVPgpGxMnnZLZaZc24PoN8dbayUo"
+   },
+   "schema": [],
+   "tags": [
+    "G-F9D1RQY67T"
+   ],
+   "markers": [],
+   "preloads": [],
+   "h1": 1,
+   "scripts": [],
+   "alts": {
+    "images/logo.svg": "Elite Spine & Sports Care"
+   }
+  }
+ },
+ "files": {
+  "404.html": true,
+  "_headers": true,
+  "_redirects": true,
+  "robots.txt": true,
+  "sitemap.xml": true
+ },
+ "tagFiles": {},
+ "robots": [
+  "User-agent: *",
+  "Allow: /",
+  "Sitemap: https://www.elitespine-nj.com/sitemap.xml"
+ ],
+ "redirects": [
+  "/thankyou /thank-you 301",
+  "/thank-you.html /thank-you 301",
+  "/services /conditions-services#services 301",
+  "/physical-therapy /conditions-services#services 301",
+  "/chiropractic-care /conditions-services#services 301",
+  "/extracorporeal-shockwave-therapy /conditions-services#services 301",
+  "/active-release-technique-art /conditions-services#services 301",
+  "/copy-of-pre-post-operation /conditions-services#services 301",
+  "/pre-post-operation /conditions-services#services 301",
+  "/pre-post-natal-care /conditions-services#services 301",
+  "/deep-tissue-laser-therapy /conditions-services#services 301",
+  "/graston-technique /conditions-services#services 301",
+  "/massage-therapy /conditions-services#services 301",
+  "/therapeutic-taping /conditions-services#services 301",
+  "/occupational-therapy /conditions-services#services 301",
+  "/about-us /#about 301",
+  "/our-team /team 301",
+  "/our-session /#resources 301",
+  "/our-location /#contact 301",
+  "/contact-us-1 /#contact 301",
+  "/free-consultation /#request 301",
+  "/post/* /blog 301"
+ ],
+ "headers": [
+  "/*",
+  "X-Content-Type-Options: nosniff",
+  "X-Frame-Options: SAMEORIGIN",
+  "Referrer-Policy: strict-origin-when-cross-origin",
+  "Permissions-Policy: geolocation=(), microphone=(), camera=()",
+  "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+  "/*.html",
+  "Cache-Control: public, max-age=0, must-revalidate",
+  "/images/*",
+  "Cache-Control: public, max-age=31536000, immutable",
+  "/*.css",
+  "Cache-Control: public, max-age=86400",
+  "/*.js",
+  "Cache-Control: public, max-age=86400",
+  "/robots.txt",
+  "Cache-Control: public, max-age=3600",
+  "/sitemap.xml",
+  "Cache-Control: public, max-age=3600"
+ ],
+ "sitemap": [
+  "https://www.elitespine-nj.com/",
+  "https://www.elitespine-nj.com/blog",
+  "https://www.elitespine-nj.com/conditions-services",
+  "https://www.elitespine-nj.com/insurance",
+  "https://www.elitespine-nj.com/team"
+ ]
+}
